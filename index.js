@@ -3,7 +3,7 @@ import axios from "axios";
 import { createClient } from "@supabase/supabase-js";
 
 // Always fetch the latest run's dataset — no hardcoded dataset ID
-const APIFY_URL = `https://api.apify.com/v2/acts/${process.env.APIFY_ACTOR}/runs/last/dataset/items?format=json&clean=true&token=${process.env.APIFY_TOKEN}`;
+const APIFY_URL = `https://api.apify.com/v2/acts/${process.env.APIFY_ACTOR_ID}/runs/last/dataset/items?format=json&clean=true&token=${process.env.APIFY_TOKEN}`;
 
 const supabase = createClient(
   process.env.SUPABASE_URL,

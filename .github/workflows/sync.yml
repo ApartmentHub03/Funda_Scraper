@@ -19,7 +19,7 @@ jobs:
 
       - run: node index.js
         env:
-          APIFY_ACTOR: ${{ secrets.APIFY_ACTOR }}
+          APIFY_ACTOR_ID: ${{ secrets.APIFY_ACTOR_ID }}
           APIFY_TOKEN: ${{ secrets.APIFY_TOKEN }}
           SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
           SUPABASE_KEY: ${{ secrets.SUPABASE_KEY }}
